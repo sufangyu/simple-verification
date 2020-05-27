@@ -1,10 +1,10 @@
 {
   "presets": [
-    ["latest", {
-      "es2015": {
+    [
+      "@babel/preset-env",
+      {
         "modules": false
       }
-    }],
-    "@babel/preset-env"
+    ]      
   ]
 }

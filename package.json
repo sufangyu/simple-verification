@@ -2,11 +2,11 @@
   "name": "simple-verification",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/simple-verification.umd.min.js",
-  "module": "dist/simple-verification.esm.min.js",
+  "main": "dist/index.umd.min.js",
+  "module": "dist/index.esm.min.js",
   "scripts": {
-    "dev": "rollup -w -c ./build/rollup.config.dev.js",
-    "build": "rollup -c ./build/rollup.config.prod.js"
+    "dev": "cross-env NODE_ENV=development rollup -w -c",
+    "build": "cross-env NODE_ENV=production rollup -c"
   },
   "keywords": [],
   "author": "",
@@ -15,13 +15,14 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "cross-env": "^7.0.2",
     "rollup": "^2.10.9",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
-    "rollup-plugin-uglify": "^6.0.4",
     "typescript": "^3.9.3"
   }
 }
