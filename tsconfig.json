@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "preserve",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "global.d.ts"
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compileOnSave": false
+}
