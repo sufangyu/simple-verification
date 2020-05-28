@@ -28,7 +28,7 @@ export default {
     return '';
   },
   /** 邮件校验 */
-  isEmail({ value, msg }): string {
+  email({ value, msg }): string {
     // eslint-disable-next-line no-useless-escape
     const reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
     if (!reg.test((value as string))) {

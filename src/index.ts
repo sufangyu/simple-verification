@@ -6,7 +6,7 @@ class Verification {
   private list: IRule[] = [];
 
   /** 校验结果信息 */
-  public message: string;
+  public message: string = '';
 
   /**
    * 添加校验规则
@@ -68,7 +68,7 @@ class Verification {
       } = this.list[i] as IRule;
 
       const fn = rule[type]({
-        value,
+        value: value.toString().trim(),
         msg,
         minLen,
         maxLen,
