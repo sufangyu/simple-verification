@@ -10,9 +10,18 @@
     "test": "jest --coverage",
     "test:dev": "jest --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "verification",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sufangyu/simple-verification.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sufangyu/simple-verification/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-transform-modules-commonjs": "^7.10.1",
