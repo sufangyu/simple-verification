@@ -38,7 +38,7 @@
           return '';
       },
       /** 邮件校验 */
-      isEmail: function (_a) {
+      email: function (_a) {
           var value = _a.value, msg = _a.msg;
           // eslint-disable-next-line no-useless-escape
           var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
@@ -61,6 +61,8 @@
       function Verification() {
           /** 校验规则列表 */
           this.list = [];
+          /** 校验结果信息 */
+          this.message = '';
       }
       /**
        * 添加校验规则
@@ -103,7 +105,7 @@
           for (var i = 0; i < this.list.length; i += 1) {
               var _a = this.list[i], value = _a.value, type = _a.type, msg = _a.msg, minLen = _a.minLen, maxLen = _a.maxLen, validator = _a.validator;
               var fn = rule[type]({
-                  value: value,
+                  value: value.toString().trim(),
                   msg: msg,
                   minLen: minLen,
                   maxLen: maxLen,

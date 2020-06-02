@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.umd.min.js",
   "module": "dist/index.esm.min.js",
+  "typings": "dist/src/index.d.ts",
   "scripts": {
     "dev": "cross-env NODE_ENV=development rollup -w -c",
     "build": "cross-env NODE_ENV=production rollup -c",

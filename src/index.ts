@@ -6,7 +6,7 @@ class Verification {
   private list: IRule[] = [];
 
   /** 校验结果信息 */
-  public message: string = '';
+  public message = '';
 
   /**
    * 添加校验规则

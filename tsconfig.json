@@ -8,13 +8,14 @@
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
-    "outDir": "lib",
+    "outDir": "./dist",
+    "declaration": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "rootDir": ".",
+    "rootDir": "./",
     "jsx": "preserve",
     "allowJs": true,
     "resolveJsonModule": true,
@@ -26,6 +27,9 @@
       "@/*": ["./src/*"]
     },
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules",
     "dist"
