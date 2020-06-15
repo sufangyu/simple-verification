@@ -22,7 +22,7 @@ export default {
   },
   /** 手机号校验 */
   mobile({ value, msg }): string {
-    if (!/\d{11}/.test((value as string))) {
+    if (!/^1\d{10}$/.test((value as string))) {
       return msg;
     }
     return '';

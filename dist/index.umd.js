@@ -32,7 +32,7 @@
       /** 手机号校验 */
       mobile: function (_a) {
           var value = _a.value, msg = _a.msg;
-          if (!/\d{11}/.test(value)) {
+          if (!/^1\d{10}$/.test(value)) {
               return msg;
           }
           return '';
